@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1491191556">
-  <File Type="PWROPT-DRC" Name="sw_btn_led_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="sw_btn_led_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="sw_btn_led_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="sw_btn_led_power_routed.rpx"/>
   <File Type="PA-TCL" Name="sw_btn_led.tcl"/>
-  <File Type="OPT-HWDEF" Name="sw_btn_led.hwdef"/>
+  <File Type="INIT-TIMING" Name="sw_btn_led_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sw_btn_led_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="sw_btn_led_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="sw_btn_led.vdi"/>
   <File Type="OPT-DCP" Name="sw_btn_led_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="sw_btn_led.hwdef"/>
   <File Type="OPT-DRC" Name="sw_btn_led_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="sw_btn_led_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="sw_btn_led_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="sw_btn_led_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="sw_btn_led_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="sw_btn_led_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="sw_btn_led.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="sw_btn_led_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="sw_btn_led.drc"/>
+  <File Type="BG-BIN" Name="sw_btn_led.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="sw_btn_led_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="sw_btn_led.msk"/>
+  <File Type="BG-DRC" Name="sw_btn_led.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sw_btn_led_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="sw_btn_led.bgn"/>
+  <File Type="BITSTR-MSK" Name="sw_btn_led.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sw_btn_led_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="sw_btn_led.bgn"/>
   <File Type="ROUTE-PWR" Name="sw_btn_led_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="sw_btn_led_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="sw_btn_led_route_status.rpt"/>
@@ -105,9 +105,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
