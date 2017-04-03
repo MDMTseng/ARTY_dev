@@ -1,0 +1,3 @@
+[submodule "Arty"]
+	path = Arty
+	url = https://github.com/Digilent/Arty.git
